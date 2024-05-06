@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiteMite!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="nav-left">
+                    <button class="navbar-toggler flat-icons" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html">MiteMite!</a>
+                </div>
+                <div class="collapse navbar-collapse page-links" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/season.html">This Season</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/simulcasts.html">Simulcasts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/music.html">Μusic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/your-list.html">Your List</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right" style="display: flex; flex-wrap: nowrap;">
+                    <a href="./pages/search.html"><img
+                            src="https://cdn.icon-icons.com/icons2/1659/PNG/512/3844432-magnifier-search-zoom_110300.png"
+                            alt="Search" class="flat-icons" style="height: 35px;"></a>
+                    <a href="" id="profile-pic"><img
+                            src="https://cdn.icon-icons.com/icons2/3690/PNG/512/user_profile_account_contact_icon_229464.png"
+                            alt="Profile" class="flat-icons" style="height: 35px;"></a>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel-container">
+            <div id="season-carousel" class="carousel slide ">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.kg-portal.ru%2Fanime%2Fk%2Fkimetsunoyaibahashirageikohen%2Ftrailers%2F53419t_2x.jpg&f=1&nofb=1&ipt=2ee3f2e0f6d04edddcb4a7bdd50da0d24eb97dfd35bcbf49b64b510e121e051c&ipo=images"
+                            alt="Kimetsu no Yaiba: Hashira Geiko-hen" class="carousel-anime-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./resources/boku-no-hero-7.png"
+                            alt="Boku No Hero Academia 7th Season" class="carousel-anime-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://preview.redd.it/uc330ct30zb71.jpg?width=1080&crop=smart&auto=webp&s=b64ba457e3b1474b86193e28c530a66e6139298b"
+                            alt="Kono Subarashii Sekai ni Shukufuku wo! 3" class="carousel-anime-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.siliconera.com/wp-content/uploads/2023/02/slime-season-3.jpg"
+                            alt="Tensei Shitara Slime Datta Ken 3rd Season" class="carousel-anime-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://staticg.sportskeeda.com/editor/2022/12/db005-16707496196624-1920.jpg?w=840"
+                            alt="Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2" class="carousel-anime-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ytimg.com/vi_webp/NvD4Qg2DgJc/maxresdefault.webp"
+                            alt="Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II Part 2"
+                            class="carousel-anime-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://ogre.natalie.mu/media/news/comic/2023/0928/yurucamp_teaser.jpg"
+                            alt="Yuru Camp Season 3" class="carousel-anime-img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#season-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#season-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <h2 class="scroller-title">Recommended</h2>
+
+        <section class="scroller">
+            <a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1612/93576l.jpg" alt="Vinland Saga">
+                <h3>Vinland Saga</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/3/67177l.jpg" alt="Shigatsu wa Kimi no Uso">
+                <h3>Shigatsu wa Kimi no Uso</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1295/106551l.jpg"
+                    alt="Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen">
+                <h3>Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1132/128063l.jpg" alt="Jujutsu Kaisen">
+                <h3>Jujutsu Kaisen</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/3/40409l.jpg" alt="JoJo no Kimyou na Bouken">
+                <h3>JoJo no Kimyou na Bouken</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1613/102576l.jpg" alt="Dr. Stone">
+                <h3>Dr. Stone</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1907/134102l.jpg" alt="Shingeki no Kyojin">
+                <h3>Shingeki no Kyojin</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1079/138100l.jpg" alt="Death Note">
+                <h3>Death Note</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1223/96541l.jpg"
+                    alt="Fullmetal Alchemist: Brotherhood">
+                <h3>Fullmetal Alchemist: Brotherhood</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1301/93586l.jpg"
+                    alt="Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai">
+                <h3>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1441/122795l.jpg" alt="Spy x Family">
+                <h3>Spy x Family</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/5/79183l.jpg" alt="Mob Psycho 100">
+                <h3>Mob Psycho 100</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/86577l.jpg" alt="Kakegurui">
+                <h3>Kakegurui</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1795/95088l.jpg" alt="Violet Evergarden">
+                <h3>Violet Evergarden</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/5/75639l.jpg" alt="Ansatsu Kyoushitsu">
+                <h3>Ansatsu Kyoushitsu</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/77957l.jpg" alt="Boku dake ga Inai Machi">
+                <h3>Boku dake ga Inai Machi</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1522/128039l.jpg"
+                    alt="Re:Zero kara Hajimeru Isekai Seikatsu">
+                <h3>Re:Zero kara Hajimeru Isekai Seikatsu</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1517/92767l.jpg" alt="Tokyo Ghoul">
+                <h3>Tokyo Ghoul</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1611/111915l.jpg" alt="Horimiya">
+                <h3>Horimiya</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/5/85434l.jpg" alt="Kobayashi-san Chi no Maid Dragon">
+                <h3>Kobayashi-san Chi no Maid Dragon</h3>
+            </a>
+        </section>
+
+        <h2 class="scroller-title">Popular</h2>
+
+        <section class="scroller">
+            <!-- contenido repetido temporal -->
+            <a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1907/134102l.jpg" alt="Shingeki no Kyojin">
+                <h3>Shingeki no Kyojin</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1079/138100l.jpg" alt="">
+                <h3>Death Note</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1223/96541l.jpg" alt="">
+                <h3>Fullmetal Alchemist: Brotherhood</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/7/72533l.jpg" alt="One Punch Man">
+                <h3>One Punch Man</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/11/39717l.jpg" alt="Sword Art Online">
+                <h3>Sword Art Online</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1286/99889l.jpg" alt="Kimetsu no Yaiba">
+                <h3>Kimetsu no Yaiba</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1985/96688l.jpg" alt="Boku no Hero Academia">
+                <h3>Boku no Hero Academia</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1141/142503l.jpg" alt="Naruto">
+                <h3>Naruto</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1940/139867l.jpg" alt="Hunter x Hunter (2011)">
+                <h3>Hunter x Hunter (2011)</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1517/92767l.jpg" alt="Tokyo Ghoul">
+                <h3>Tokyo Ghoul</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1935/127974l.jpg" alt="Steins;Gate">
+                <h3>Steins;Gate</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1132/128063l.jpg" alt="Jujutsu Kaisen">
+                <h3>Jujutsu Kaisen</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1074/111944l.jpg" alt="No Game No Life">
+                <h3>No Game No Life</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1244/138851l.jpg" alt="One Piece">
+                <h3>One Piece</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1032/135088l.jpg"
+                    alt="Code Geass: Hangyaku no Lelouch">
+                <h3>Code Geass: Hangyaku no Lelouch</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/3/67177l.jpg" alt="Shigatsu wa Kimi no Uso">
+                <h3>Shigatsu wa Kimi no Uso</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1356/94686l.jpg" alt="Toradora!">
+                <h3>Toradora!</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1522/128039l.jpg"
+                    alt="Re:Zero kara Hajimeru Isekai Seikatsu">
+                <h3>Re:Zero kara Hajimeru Isekai Seikatsu</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1886/128266l.jpg" alt="Noragami">
+                <h3>Noragami</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/77957l.jpg" alt="Boku dake ga Inai Machi">
+                <h3>Boku dake ga Inai Machi</h3>
+            </a>
+        </section>
+
+        <h2 class="scroller-title">This Season's best!</h2>
+
+        <section class="scroller">
+            <a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1800/136599l.jpg"
+                    alt="Kono Subarashii Sekai ni Shukufuku wo! 3">
+                <h3>Kono Subarashii Sekai ni Shukufuku wo! 3</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1565/142711l.jpg"
+                    alt="Kimetsu no Yaiba: Hashira Geiko-hen">
+                <h3>Kimetsu no Yaiba: Hashira Geiko-hen</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1878/142649l.jpg"
+                    alt="Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2">
+                <h3>Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1587/141789l.jpg"
+                    alt="Tensei shitara Slime Datta Ken 3rd Season">
+                <h3>Tensei shitara Slime Datta Ken 3rd Season</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1370/140362l.jpg" alt="Kaijuu 8-gou">
+                <h3>Kaijuu 8-gou</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1529/140306l.jpg"
+                    alt="Boku no Hero Academia 7th Season">
+                <h3>Boku no Hero Academia 7th Season</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1438/141816l.jpg" alt="Wind Breaker">
+                <h3>Wind Breaker</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1704/121099l.jpg"
+                    alt="Ookami to Koushinryou: Merchant Meets the Wise Wolf">
+                <h3>Ookami to Koushinryou: Merchant Meets the Wise Wolf</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1601/142424l.jpg"
+                    alt="Maou Gakuin no Futekigousha II: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou Part 2">
+                <h3>Maou Gakuin no Futekigousha II: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou
+                    e Kayou Part 2</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1100/142255l.jpg"
+                    alt="Mahouka Koukou no Rettousei 3rd Season">
+                <h3>Mahouka Koukou no Rettousei 3rd Season</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1665/135139l.jpg" alt="Date A Live V">
+                <h3>Date A Live V</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1183/141489l.jpg" alt="Sentai Daishikkaku">
+                <h3>Sentai Daishikkaku</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1346/141203l.jpg"
+                    alt="Maou no Ore ga Dorei Elf wo Yome ni Shitanda ga, Dou Medereba Ii?">
+                <h3>Maou no Ore ga Dorei Elf wo Yome ni Shitanda ga, Dou Medereba Ii?</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1580/141243l.jpg"
+                    alt="Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu">
+                <h3>Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1676/141714l.jpg" alt="Jiisan Baasan Wakagaeru">
+                <h3>Jiisan Baasan Wakagaeru</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1103/142513l.jpg"
+                    alt="Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life">
+                <h3>Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1143/142439l.jpg" alt="Unnamed Memory">
+                <h3>Unnamed Memory</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1646/141411l.jpg" alt="Hananoi-kun to Koi no Yamai">
+                <h3>Hananoi-kun to Koi no Yamai</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1523/141680l.jpg" alt="Re:Monster">
+                <h3>Re:Monster</h3>
+            </a><a href="" class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1462/142547l.jpg" alt="Bartender: Kami no Glass">
+                <h3>Bartender: Kami no Glass</h3>
+            </a>
+        </section>
+
+        <h2 class="scroller-title">Latest Episodes</h2>
+        <div class="scroller">
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+            <div class="anison listed">
+                <img src="https://i.ytimg.com/vi/8k83nGvWD3I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEu6IPUaCen3ULui9yx2Vl27mfog"
+                    alt="">
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <ul>
+            <li><a href="" class="footer-links">Terms of Service</a></li>
+            <li><a href="" class="footer-links">Privacy Policy</a></li>
+            <li><a href="" class="footer-links">Redeem Giftcard</a></li>
+        </ul>
+        <ul>
+            <li><a href="" class="footer-links">Support</a></li>
+            <li><a href="" class="footer-links">Media</a></li>
+            <li><a href="" class="footer-links">FAQ</a></li>
+            <li><a href="" class="footer-links">Contact Us</a></li>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="" class="social-media">
+                    <img src="https://cdn.icon-icons.com/icons2/791/PNG/512/YOUTUBE_icon-icons.com_65487.png"
+                        alt="Youtube" class="flat-icons media-icon">
+                    <p class="footer-links">Youtube</p>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-media">
+                    <img src="https://cdn.icon-icons.com/icons2/3852/PNG/512/instagram_icon_236690.png" alt="Instagram"
+                        class="flat-icons media-icon">
+                    <p class="footer-links">Instagram</p>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-media">
+                    <img src="https://cdn.icon-icons.com/icons2/122/PNG/512/twitter_socialnetwork_20007.png"
+                        alt="Twitter" class="flat-icons media-icon">
+                    <p class="footer-links">Twitter</p>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-media">
+                    <img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/tiktok_logo_icon_144802.png" alt="TikTok"
+                        class="flat-icons media-icon">
+                    <p class="footer-links">TikTok</p>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social-media">
+                    <img src="https://cdn.icon-icons.com/icons2/1995/PNG/512/facebook_internet_media_network_social_icon_123257.png"
+                        alt="Facebook" class="flat-icons media-icon">
+                    <p class="footer-links">Facebook</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
