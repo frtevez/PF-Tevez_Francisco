@@ -1,0 +1,85 @@
+/* ANIME CARD */
+
+.anime-card {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    height: 375px;
+    padding: 10px;
+    transition: all 0.1s;
+    width: min-content;
+    scroll-snap-align: start;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.5s;
+        background-color: #2b2b2b;
+    }
+
+    img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 12pt;
+        text-wrap: wrap;
+        text-overflow: hidden;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+/* ANIME CARD GRID */
+
+.search-results,
+.season-list,
+.user-list {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 380px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* minmax : mínimo de 200px
+    máximo de 1 fracción */
+    margin: 0 4rem;
+    justify-items: center;
+}
+
+
+@media (max-width: 426px) {
+
+    .anime-card {
+        height: 200px;
+        width: min-content;
+
+        img {
+            width: 90px;
+            height: 135px;
+            margin-bottom: 4px;
+        }
+
+        h3 {
+            font-size: 8pt;
+            text-wrap: wrap;
+            text-overflow: hidden;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .search-results,
+    .season-list,
+    .user-list {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 200px;
+        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+        margin: 0 4rem;
+        justify-items: center;
+    }
+}

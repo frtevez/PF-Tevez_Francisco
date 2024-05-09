@@ -1,0 +1,54 @@
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    padding: .5rem 0rem .5rem 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h2 {
+    padding: 3rem 3rem .5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    padding: 0rem 0rem 1rem 7rem;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    color: white;
+    opacity: 0.6;
+}
+
+.flat-icons {
+    filter: brightness(0) invert(0.9);
+    transition-property: all;
+    transition-duration: 100ms;
+    &:hover {
+        filter: brightness(0) invert(1);
+        transition-property: all;
+        transition-duration: 100ms;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    h1 {
+        font-size: 1.4rem;
+        padding: .5rem 0rem 0rem 1rem;
+    }
+
+    .subtitle {
+        font-size: .7rem;
+        padding: 0rem 0rem 1rem 3rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+}

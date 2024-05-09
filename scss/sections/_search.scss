@@ -1,0 +1,35 @@
+/* SEARCH */
+
+.search-container {
+    padding: 25px 50px;
+    display: flex;
+}
+
+.search-input {
+    background-color: #151515;
+    width: 40vw;
+    height: 2em;
+    border: 0;
+    border-radius: 45px;
+    outline: none;
+    padding: .5em 1.5em;
+    font-size: 16pt;
+}
+
+/* para poder ver las versiones de search con y sin resultados */
+.placeholder-result {
+    display: none;
+}
+
+
+@media (max-width: 991px) {
+
+    .search-container {
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 80vw;
+    }
+
+}

@@ -1,0 +1,96 @@
+/* CAROUSEL */
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* SEASON CAROUSEL */
+
+#season-carousel {
+    width: 1024px;
+    height: 576px;
+
+    div .carousel-item {
+        backface-visibility: visible !important;
+    }
+}
+
+.carousel-anime-img {
+    width: 1024px;
+    height: 576px;
+    object-fit: cover;
+}
+
+/* MUSIC CAROUSEL */
+
+#music-carousel {
+    width: 896px;
+
+    .carousel-inner .carousel-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    button.carousel-control-prev {
+        position: absolute;
+        left: -20%;
+    }
+
+    button.carousel-control-next {
+        position: absolute;
+        right: -20%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #season-carousel {
+        display: none;
+    }
+
+    #music-carousel {
+        button.carousel-control-prev {
+            position: absolute;
+            left: 20%;
+            top: 105%;
+        }
+
+        button.carousel-control-next {
+            position: absolute;
+            right: 20%;
+            top: 105%;
+        }
+    }
+
+}
+
+
+@media (max-width: 426px) {
+
+    #music-carousel {
+        button.carousel-control-prev {
+            position: absolute;
+            left: 20%;
+            top: 111%;
+        }
+
+        button.carousel-control-next {
+            position: absolute;
+            right: 20%;
+            top: 111%;
+        }
+    }
+}
