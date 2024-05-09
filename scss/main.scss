@@ -2,9 +2,10 @@
 @import './util/variables';
 @import './util/reset';
 
-@import './sections/header';
-@import './sections/main';
-@import './sections/footer';
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+
 @import './sections/carousels';
 @import './sections/scroller';
 @import './sections/anime-cards';
