@@ -334,17 +334,26 @@ footer {
 /* SIMULCAST */
 .week {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  grid-auto-rows: 30rem;
-  margin: 0;
-  gap: 0.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(30rem, max-content);
+  margin: 0px 10px;
+  padding: 0;
+  gap: 8px;
   justify-items: center; }
-  .week li {
+  .week .day {
+    margin: 15px 0px;
+    padding: 8px;
     border-left: 1px solid #c6c6c6;
     border-right: 1px solid #c6c6c6;
+    border-radius: 10px;
     width: 13em;
     display: flex;
-    font-display: column;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start; }
+    .week .day li {
+      list-style: disc;
+      text-wrap: balance;
+      font-weight: bold;
+      margin: 10px 0px; }
