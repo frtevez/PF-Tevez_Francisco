@@ -135,7 +135,8 @@ footer {
     padding: 10px 0px; }
 
 .footer-links {
-  color: #c6c6c6; }
+  color: #c6c6c6;
+  margin: 0 0; }
   .footer-links:hover {
     color: white; }
 
@@ -145,7 +146,8 @@ footer {
   align-items: center;
   justify-content: flex-start;
   width: 100px;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-bottom: 5px; }
 
 .media-icon {
   width: 30px;
