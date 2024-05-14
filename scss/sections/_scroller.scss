@@ -20,6 +20,13 @@
     overflow-x: scroll;
     overflow-y: hidden;
     height: max-content;
-    scrollbar-width: none;
+    scrollbar-width: thin;
     scroll-snap-type: inline mandatory;
+    scrollbar-color: $color2 $color1;
+}
+
+@media (max-width: 1024px) {
+    .scroller {
+        scrollbar-width: none;
+    }
 }

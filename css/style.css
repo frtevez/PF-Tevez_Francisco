@@ -239,8 +239,13 @@ footer {
   overflow-x: scroll;
   overflow-y: hidden;
   height: max-content;
-  scrollbar-width: none;
-  scroll-snap-type: inline mandatory; }
+  scrollbar-width: thin;
+  scroll-snap-type: inline mandatory;
+  scrollbar-color: #101519 #191f24; }
+
+@media (max-width: 1024px) {
+  .scroller {
+    scrollbar-width: none; } }
 
 /* ANIME CARD */
 .anime-card {
