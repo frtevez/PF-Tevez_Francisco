@@ -94,6 +94,15 @@ header {
 .nav-right a {
   margin: .25rem; }
 
+.selected a {
+  color: white; }
+
+.selected img {
+  filter: brightness(0) invert(1); }
+
+.selected:not(a) {
+  background-color: #101519; }
+
 @media (max-width: 991px) {
   .navbar-brand {
     margin-left: .5rem; }

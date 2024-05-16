@@ -60,6 +60,21 @@ header {
     margin: .25rem;
 }
 
+.selected {
+    a {
+        color: white;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
+    }
+
+    &:not(a) {
+        background-color: $color2;
+    }
+}
+
+
 @media (max-width: 991px) {
 
     .navbar-brand {
