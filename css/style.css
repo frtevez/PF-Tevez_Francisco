@@ -266,26 +266,37 @@ footer {
   align-content: center;
   flex-wrap: nowrap;
   height: 375px;
-  padding: 10px;
+  padding: 0px 10px;
   transition: all 0.1s;
   width: min-content;
   scroll-snap-align: start;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: black;
+  border-radius: 2px; }
   .anime-card:hover {
     transition: all 0.5s;
     background-color: #2b2b2b; }
   .anime-card img {
+    padding-top: 10px;
     width: 200px;
     height: 300px;
+    min-height: 300px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     margin-bottom: 8px; }
+  .anime-card:hover img {
+    min-height: 100px; }
+  .anime-card:hover h3 {
+    height: min-content;
+    overflow: visible; }
   .anime-card h3 {
+    overflow: hidden;
     font-size: 12pt;
     text-wrap: wrap;
-    text-overflow: hidden;
     color: white;
-    font-weight: bold; }
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content; }
 
 /* ANIME CARD GRID */
 .search-results,
@@ -303,6 +314,7 @@ footer {
 @media (max-width: 426px) {
   .anime-card {
     height: 200px;
+    min-height: 200px;
     width: min-content; }
     .anime-card img {
       width: 90px;
@@ -311,7 +323,6 @@ footer {
     .anime-card h3 {
       font-size: 8pt;
       text-wrap: wrap;
-      text-overflow: hidden;
       color: white;
       font-weight: bold; }
   .search-results,

@@ -7,11 +7,13 @@
     align-content: center;
     flex-wrap: nowrap;
     height: 375px;
-    padding: 10px;
+    padding: 0px 10px;
     transition: all 0.1s;
     width: min-content;
     scroll-snap-align: start;
     text-decoration: none;
+    background-color: black;
+    border-radius: 2px;
 
     &:hover {
         transition: all 0.5s;
@@ -19,19 +21,38 @@
     }
 
     img {
+        padding-top: 10px;
         width: 200px;
         height: 300px;
+        min-height: 300px;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
         margin-bottom: 8px;
+
+    }
+
+    &:hover {
+        img {
+            min-height: 100px;
+
+        }
+
+        h3 {
+            height: min-content;
+            overflow: visible;
+        }
+
     }
 
     h3 {
+        overflow: hidden;
         font-size: 12pt;
         text-wrap: wrap;
-        text-overflow: hidden;
         color: white;
         font-weight: bold;
+        width: fit-content;
+        height: fit-content;
+
     }
 }
 
@@ -55,6 +76,7 @@
 
     .anime-card {
         height: 200px;
+        min-height: 200px;
         width: min-content;
 
         img {
@@ -66,7 +88,6 @@
         h3 {
             font-size: 8pt;
             text-wrap: wrap;
-            text-overflow: hidden;
             color: white;
             font-weight: bold;
         }
