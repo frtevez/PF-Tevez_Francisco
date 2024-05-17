@@ -9,7 +9,6 @@ h1 {
   font-family: Verdana; }
 
 h2 {
-  padding: 3rem 3rem .5rem;
   font-weight: bold;
   font-size: 1.5rem; }
 
@@ -123,7 +122,7 @@ main {
   background-color: #000000;
   min-height: calc(100vh - 55px - 25rem);
   margin: 0px;
-  padding: 0px; }
+  padding: 10px 0px 50px 0px; }
 
 @media (max-width: 991px) {
   main {
@@ -171,11 +170,11 @@ footer {
 /* CAROUSEL */
 .carousel-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: .25rem 0rem 2rem 0rem; }
 
 /* SEASON CAROUSEL */
 #season-carousel {
-  padding-top: 1rem;
   width: 1024px;
   height: 576px; }
   #season-carousel div .carousel-item {
@@ -210,6 +209,8 @@ footer {
     right: -20%; }
 
 @media (max-width: 1024px) {
+  #season-carousel-title {
+    display: none; }
   #season-carousel {
     display: none; }
   #music-carousel button.carousel-control-prev {
@@ -233,16 +234,16 @@ footer {
 
 /* CARD SCROLLER */
 .scroller-title {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
   font-size: 1.5em;
   font-weight: bold; }
 
 .scroller {
   display: flex;
   flex-direction: row;
-  margin: 0px 30px;
+  margin: 0px 30px 3rem 30px;
   padding: 5px 0px;
   align-items: flex-start;
   align-content: center;
@@ -276,29 +277,32 @@ footer {
   .anime-card:hover {
     transition: all 0.5s;
     background-color: #2b2b2b; }
+    .anime-card:hover img {
+      min-height: 10%; }
+    .anime-card:hover h3 {
+      overflow: visible; }
   .anime-card img {
     padding-top: 10px;
     width: 200px;
     height: 300px;
-    min-height: 300px;
     object-fit: cover;
     object-position: top;
-    margin-bottom: 8px; }
-  .anime-card:hover img {
-    min-height: 100px; }
-  .anime-card:hover h3 {
-    height: min-content;
-    overflow: visible; }
+    margin-bottom: 8px;
+    min-height: 300px; }
   .anime-card h3 {
     overflow: hidden;
     font-size: 12pt;
     text-wrap: wrap;
     color: white;
     font-weight: bold;
-    width: fit-content;
-    height: fit-content; }
+    max-height: 50%; }
 
 /* ANIME CARD GRID */
+#Watching,
+#Queue,
+#Completed {
+  margin: .5rem 3rem .5rem; }
+
 .search-results,
 .season-list,
 .user-list {
@@ -313,13 +317,13 @@ footer {
 
 @media (max-width: 426px) {
   .anime-card {
-    height: 200px;
-    min-height: 200px;
+    height: 185px;
     width: min-content; }
     .anime-card img {
       width: 90px;
       height: 135px;
-      margin-bottom: 4px; }
+      margin-bottom: 4px;
+      min-height: 135px; }
     .anime-card h3 {
       font-size: 8pt;
       text-wrap: wrap;
@@ -330,10 +334,14 @@ footer {
   .user-list {
     display: grid;
     gap: 1rem;
-    grid-auto-rows: 200px;
+    grid-auto-rows: 185px;
     grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
     margin: 0 4rem;
-    justify-items: center; } }
+    justify-items: center; }
+    .search-results .anime-card,
+    .season-list .anime-card,
+    .user-list .anime-card {
+      padding: 0 4px; } }
 
 /* SEARCH */
 .search-container {

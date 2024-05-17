@@ -1,18 +1,17 @@
 /* CARD SCROLLER */
 
 .scroller-title {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
     font-size: 1.5em;
     font-weight: bold;
-
 }
 
 .scroller {
     display: flex;
     flex-direction: row;
-    margin: 0px 30px;
+    margin: 0px 30px 3rem 30px;
     padding: 5px 0px;
     align-items: flex-start;
     align-content: center;

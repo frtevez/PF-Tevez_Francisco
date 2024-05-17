@@ -18,29 +18,24 @@
     &:hover {
         transition: all 0.5s;
         background-color: #2b2b2b;
+
+        img {
+            min-height: 10%;
+        }
+
+        h3 {
+            overflow: visible;
+        }
     }
 
     img {
         padding-top: 10px;
         width: 200px;
         height: 300px;
-        min-height: 300px;
         object-fit: cover;
         object-position: top;
         margin-bottom: 8px;
-
-    }
-
-    &:hover {
-        img {
-            min-height: 100px;
-
-        }
-
-        h3 {
-            height: min-content;
-            overflow: visible;
-        }
+        min-height: 300px;
 
     }
 
@@ -50,13 +45,18 @@
         text-wrap: wrap;
         color: white;
         font-weight: bold;
-        width: fit-content;
-        height: fit-content;
+        max-height: 50%;
 
     }
 }
 
 /* ANIME CARD GRID */
+
+#Watching,
+#Queue,
+#Completed {
+    margin: .5rem 3rem .5rem;
+}
 
 .search-results,
 .season-list,
@@ -69,20 +69,21 @@
     máximo de 1 fracción */
     margin: 0 4rem;
     justify-items: center;
+    
 }
 
 
 @media (max-width: 426px) {
 
     .anime-card {
-        height: 200px;
-        min-height: 200px;
+        height: 185px;
         width: min-content;
 
         img {
             width: 90px;
             height: 135px;
             margin-bottom: 4px;
+            min-height: 135px;
         }
 
         h3 {
@@ -90,7 +91,10 @@
             text-wrap: wrap;
             color: white;
             font-weight: bold;
+
         }
+
+
     }
 
     .search-results,
@@ -98,9 +102,12 @@
     .user-list {
         display: grid;
         gap: 1rem;
-        grid-auto-rows: 200px;
+        grid-auto-rows: 185px;
         grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
         margin: 0 4rem;
         justify-items: center;
+        .anime-card{
+            padding: 0 4px ;
+        }
     }
 }

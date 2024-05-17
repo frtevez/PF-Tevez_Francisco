@@ -2,7 +2,8 @@ main {
     background-color: #000000;
     min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
     margin: 0px;
-    padding: 0px;
+    padding: 10px 0px 50px 0px;
+
 }
 
 @media (max-width: 991px) {
