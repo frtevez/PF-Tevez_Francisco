@@ -1,0 +1,53 @@
+.thumbnail{
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin-bottom: 30px;
+    img{
+        width: 280px;
+        height: 157px;
+        object-fit: cover;
+        object-position: top;
+    }
+    p{
+        padding-top: 3px;
+        margin: 0px 8px;
+        font-family: Verdana;
+        font-size: 12pt;
+        max-height: 50px;
+        overflow: hidden; 
+    }
+    &:hover{
+        background-color: #2b2b2b;
+        img{
+            height: 50%;
+        }
+        p{
+            max-height: 100px;
+        }
+    }
+}
+
+@media (max-width: 641px) {
+    .thumbnail{
+        width: 200px;
+        height: 146px;
+        margin-bottom: 12px;
+        img{
+            width: 193px;
+            height: 108px;
+        }
+        p{
+            font-size: 8pt;
+            max-height: 33px;
+        }
+        &:hover{
+        p{
+            max-height: 69px;
+        }
+        }
+        
+
+    }
+
+}

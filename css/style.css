@@ -213,6 +213,8 @@ footer {
     display: none; }
   #season-carousel {
     display: none; }
+  #music-carousel-container {
+    padding-bottom: 15px; }
   #music-carousel button.carousel-control-prev {
     position: absolute;
     left: 20%;
@@ -237,7 +239,7 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 20px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold; }
 
 .scroller {
@@ -258,6 +260,12 @@ footer {
 @media (max-width: 1024px) {
   .scroller {
     scrollbar-width: none; } }
+
+@media (max-width: 426px) {
+  .scroller-title {
+    font-size: 1.16rem; }
+  .scroller {
+    margin-bottom: 1rem; } }
 
 /* ANIME CARD */
 .anime-card {
@@ -342,6 +350,44 @@ footer {
     .season-list .anime-card,
     .user-list .anime-card {
       padding: 0 4px; } }
+
+.thumbnail {
+  width: 290px;
+  height: 220px;
+  padding: 5px;
+  margin-bottom: 30px; }
+  .thumbnail img {
+    width: 280px;
+    height: 157px;
+    object-fit: cover;
+    object-position: top; }
+  .thumbnail p {
+    padding-top: 3px;
+    margin: 0px 8px;
+    font-family: Verdana;
+    font-size: 12pt;
+    max-height: 50px;
+    overflow: hidden; }
+  .thumbnail:hover {
+    background-color: #2b2b2b; }
+    .thumbnail:hover img {
+      height: 50%; }
+    .thumbnail:hover p {
+      max-height: 100px; }
+
+@media (max-width: 641px) {
+  .thumbnail {
+    width: 200px;
+    height: 146px;
+    margin-bottom: 12px; }
+    .thumbnail img {
+      width: 193px;
+      height: 108px; }
+    .thumbnail p {
+      font-size: 8pt;
+      max-height: 33px; }
+    .thumbnail:hover p {
+      max-height: 69px; } }
 
 /* SEARCH */
 .search-container {

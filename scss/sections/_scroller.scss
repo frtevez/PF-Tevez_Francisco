@@ -4,7 +4,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -25,7 +25,17 @@
 }
 
 @media (max-width: 1024px) {
+
     .scroller {
         scrollbar-width: none;
+    }
+}
+
+@media (max-width: 426px) {
+    .scroller-title{
+        font-size: 1.16rem;
+    }
+    .scroller {
+        margin-bottom: 1rem;
     }
 }
