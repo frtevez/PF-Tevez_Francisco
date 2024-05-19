@@ -7,6 +7,9 @@ header {
 .navbar {
     padding: 0px 0px;
     height: $navbar-height;
+    .container-fluid{
+        flex-wrap: nowrap ;
+    }
 }
 
 .navbar-brand,
@@ -24,11 +27,30 @@ header {
 .navbar-brand {
     color: white;
     margin-left: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    img {
+        position: relative;
+        height: 2rem;
+        width: 2rem;
+        bottom: 6px;
+        margin-right: 4px;
+    }
 
     &:hover {
         color: $color3;
+
+        img {
+            animation-name: logo-jump;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+        }
     }
 }
+
 
 .nav-left {
     display: flex;
@@ -98,5 +120,14 @@ header {
             background-color: $color1;
         }
 
+    }
+}
+
+@media (max-width: 334px){
+    .navbar-brand{
+        visibility: hidden;
+        img{
+            visibility: visible;
+        }
     }
 }
