@@ -54,7 +54,7 @@ h2 {
     translate: 0px 8px;
     transform: scale(1.4, 0.6); }
   50% {
-    translate: 0px -34px;
+    translate: 0px -15px;
     transform: scale(0.6, 1.4); }
   70% {
     transform: scale(1, 1); }
@@ -100,7 +100,7 @@ header {
     color: #ffb800; }
     .navbar-brand:hover img {
       animation-name: logo-jump;
-      animation-duration: 1s;
+      animation-duration: .75s;
       animation-timing-function: ease-in-out;
       animation-delay: 0s;
       animation-fill-mode: forwards;
