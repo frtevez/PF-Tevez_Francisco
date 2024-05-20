@@ -10,6 +10,13 @@ header {
     .container-fluid{
         flex-wrap: nowrap ;
     }
+
+    // BOOTSTRAP OVERRIDE
+    --bs-navbar-hover-color: none;
+    --bs-navbar-active-color: none;
+    --bs-navbar-brand-color: none;
+    --bs-navbar-brand-hover-color: none;
+    
 }
 
 .navbar-brand,

@@ -72,7 +72,11 @@ header {
 
 .navbar {
   padding: 0px 0px;
-  height: 55px; }
+  height: 55px;
+  --bs-navbar-hover-color: none;
+  --bs-navbar-active-color: none;
+  --bs-navbar-brand-color: none;
+  --bs-navbar-brand-hover-color: none; }
   .navbar .container-fluid {
     flex-wrap: nowrap; }
 
